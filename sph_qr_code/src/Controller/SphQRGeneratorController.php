@@ -5,7 +5,7 @@ namespace Drupal\sph_qr_code\Controller;
 use Drupal\Core\Controller\ControllerBase;
 
 /**
- * Defines VeracodeAnimatedSvgController class.
+ * Defines SphQRGeneratorController class.
  */
 class SphQRGeneratorController extends ControllerBase {
 
