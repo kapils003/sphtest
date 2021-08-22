@@ -1,0 +1,15 @@
+name: SPH theme
+description: QR code generator Drupal Theme
+type: theme
+package: core
+base theme: bartik
+core: 8.x
+core_version_requirement: ^8 || ^9
+libraries:
+  - sph/global-styling
+regions:
+    main_menu: 'Main Menu'
+    content: Content
+    product_right_sidebar: 'Blog Right Sidebar'
+    footer: 'Footer'
+    disabled: 'Disabled'

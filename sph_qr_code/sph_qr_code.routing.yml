@@ -1,0 +1,7 @@
+sph_qr_code.qr.url:
+  path: '/sph_qr_code'
+  defaults:
+    _controller: '\Drupal\sph_qr_code\Controller\SphQRGeneratorController::content'
+    _title: 'SPH QR CODE'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,12 @@
+<article{{ attributes.addClass(classes) }}>
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+    {% set product_image = content.field_image %}
+    {% set product_description = content.body|raw %}
+    {% set app_purchase_link = content.field_link.0['#url'] %}
+    {{app_purchase_link}}{{product_image}}{{product_description}}
+    <img src={{app_url}}>
+  </div>
+</article>

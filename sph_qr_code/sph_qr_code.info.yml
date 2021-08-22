@@ -1,0 +1,8 @@
+name: Sph Qr Code
+description: Generates Qr Code using phpqrcode Library.
+core: 8.x
+type: module
+package: other
+core_version_requirement: ^8 || ^9
+version: '1.0.0'
+project: 'sph_qr_code'

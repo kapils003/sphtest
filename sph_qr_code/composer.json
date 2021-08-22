@@ -1,0 +1,9 @@
+{
+    "name": "drupal/sph_qr_code",
+    "description": "Generates Qr Code using phpqrcode Library.",
+    "type": "drupal-module",
+    "license": "GPL-2.0+",
+    "require": {
+        "aferrandini/phpqrcode": "^1.0",
+    }
+}

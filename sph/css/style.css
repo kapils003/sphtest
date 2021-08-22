@@ -1,0 +1,23 @@
+﻿
+.product_wrapper {
+	display: inline-flex;
+	width: 100%;
+}
+.sph-product__image {
+	width: 20%;
+}
+.sph-product__details {
+	width: 30%;
+    border-right: 1px dotted;
+}
+.spacing {
+	width: 2%;
+}
+.sph-product__qrcode {
+	border: 1px solid;
+	text-align: center;
+	width: 20%;
+}
+.sph-product__qrcode img {
+    width: 200px;
+}

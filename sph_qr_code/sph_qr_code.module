@@ -1,0 +1,44 @@
+<?php
+use Drupal\block\Entity\Block;
+
+/**
+ * Implements hook_theme().
+ */
+function sph_qr_code_theme($existing, $type, $theme, $path) {
+  return [
+    'sph_qr_code' => [
+      'variables' => ['test_var' => NULL],
+    ],
+  ];
+} 
+
+function sph_qr_code_preprocess_node(&$variables) {
+
+  // displayed on the page.
+  if ($variables['node']->hasField('field_link')) {
+    $app_purchase_link = $variables['node']->get('field_link')->first()->getUrl()->toString();
+    $node_id = $variables['node']->id();
+    if ($app_purchase_link) {
+      $variables['app_url'] = sphQrCode($app_purchase_link, $node_id);
+    }
+  }
+
+}
+
+function sphQrCode($app_link, $node_id) {
+
+  // The below code will automatically create the path for the img.
+  $path = '';
+  $directory = "public://images/sphQrCodes/";
+  \Drupal::service('file_system')->prepareDirectory($directory, \Drupal\Core\File\FileSystemInterface::CREATE_DIRECTORY);
+  // Name of the generated image.
+  $qrName = 'sphQrcode_'.$node_id;
+  $uri = $directory . $qrName . '.png'; // Generates a png image.
+  $path = \Drupal::service('file_system')->realpath($uri);
+  // Generate QR code image.
+  \PHPQRCode\QRcode::png($app_link, $path, 'L', 4, 2);
+  $path = \Drupal\Core\Url::fromUri(file_create_url($uri))->toString();
+  return $path;
+
+}
+
