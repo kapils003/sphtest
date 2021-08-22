@@ -3,7 +3,6 @@
 namespace Drupal\sph_qr_code\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
-
 /**
  * Defines SphQRGeneratorController class.
  */
