@@ -22,6 +22,6 @@ As I'm using my PC for differnt GIT account which i don't want to change for a w
 Please accept this as a quick work around and let me know your response.
 
 Hope this will work for you.
-
+Note : Custom block called SPH QR Code is also available which can be used inside page region as well which will display QR code if field_link is available for the node.
 Thanks
 Kapil Sharma
