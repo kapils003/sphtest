@@ -10,6 +10,6 @@ libraries:
 regions:
     main_menu: 'Main Menu'
     content: Content
-    product_right_sidebar: 'Blog Right Sidebar'
+    product_right_sidebar: 'Product Right Sidebar'
     footer: 'Footer'
     disabled: 'Disabled'
