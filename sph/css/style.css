@@ -21,3 +21,7 @@
 .sph-product__qrcode img {
     width: 200px;
 }
+.sph-product-block__qrcode {
+	border: 1px solid;
+    text-align: center;
+}
