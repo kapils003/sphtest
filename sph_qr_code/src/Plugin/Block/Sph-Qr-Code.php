@@ -5,7 +5,7 @@ namespace Drupal\sph_qr_code\Plugin\Block;
 use Drupal\Core\Block\BlockBase;
 
 /**
- * Provides a 'Veracode_Animated_Svg' Block.
+ * Provides a 'SPH QR Code' Block.
  *
  * @Block(
  *   id = "sph_qr_code",
